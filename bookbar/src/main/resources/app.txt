@@ -36,3 +36,10 @@ spring.datasource.druid.use-global-data-source-stat=true
 #设置访问druid监控页的账号和密码,默认没有
 #spring.datasource.druid.stat-view-servlet.login-username=admin
 #spring.datasource.druid.stat-view-servlet.login-password=admin
+
+#热部署生效
+spring.devtools.restart.enabled: true
+#设置重启的目录
+#spring.devtools.restart.additional-paths: src/main/java
+#classpath目录下的WEB-INF文件夹内容修改不重启
+spring.devtools.restart.exclude: WEB-INF/**
