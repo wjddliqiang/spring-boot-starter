@@ -1,392 +1,178 @@
-2019-04-16 23:13:34.813  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:13:34.813  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:13:35.363  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:13:35.364  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:13:35.387  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:13:35.393  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:13:35.891  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 1.132 seconds (JVM running for 190.027)
-2019-04-16 23:13:52.888  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:13:52.889 DEBUG 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
-2019-04-16 23:13:52.890  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:13:53.434  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:13:53.434  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:13:53.456  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:13:53.461  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:13:53.802  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.966 seconds (JVM running for 207.938)
-2019-04-16 23:14:17.747  INFO 3728 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-04-16 23:14:17.764  INFO 3728 --- [http-nio-80-exec-1] c.l.b.controller.JdbcTestController      : 使用JdbcTemplate查询数据库
-2019-04-16 23:14:18.198  INFO 3728 --- [http-nio-80-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
-2019-04-16 23:15:55.143  INFO 3728 --- [Thread-16] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
-2019-04-16 23:15:55.550  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:15:55.551  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:15:55.995  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:15:55.996  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:15:56.078  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:15:56.086  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:15:56.555  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 1.094 seconds (JVM running for 330.692)
-2019-04-16 23:16:06.446  INFO 3728 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-04-16 23:16:06.457  INFO 3728 --- [http-nio-80-exec-1] c.l.b.controller.JdbcTestController      : 使用JdbcTemplate查询数据库
-2019-04-16 23:16:06.893  INFO 3728 --- [http-nio-80-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
-2019-04-16 23:17:53.365  INFO 3728 --- [Thread-22] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
-2019-04-16 23:17:53.724  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:17:53.725  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:17:54.189  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:17:54.191  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:17:54.191  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:17:54.239  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:17:54.240  INFO 3728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 511 ms
-2019-04-16 23:17:54.244  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:17:54.393  INFO 3728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:17:54.502  INFO 3728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:17:54.539  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:17:54.540  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.879 seconds (JVM running for 448.677)
-2019-04-16 23:17:54.542  INFO 3728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:18:02.915  INFO 3728 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-04-16 23:18:02.927  INFO 3728 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-04-16 23:18:02.939  INFO 3728 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-04-16 23:18:02.940  INFO 3728 --- [http-nio-80-exec-1] c.l.b.controller.JdbcTestController      : 使用JdbcTemplate查询数据库
-2019-04-16 23:18:02.946 DEBUG 3728 --- [http-nio-80-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [select * from tb_book]
-2019-04-16 23:18:03.440  INFO 3728 --- [http-nio-80-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
-2019-04-16 23:19:30.020  INFO 3728 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:19:30.181  INFO 3728 --- [Thread-28] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
-2019-04-16 23:19:30.525  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:19:30.526  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:19:30.967  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:19:30.969  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:19:30.969  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:19:31.024  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:19:31.024  INFO 3728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 494 ms
-2019-04-16 23:19:31.028  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:19:31.168  INFO 3728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:19:31.273  INFO 3728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:19:31.312  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:19:31.312  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.83 seconds (JVM running for 545.45)
-2019-04-16 23:19:31.315  INFO 3728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:25:31.361  INFO 3728 --- [Thread-34] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:25:31.923  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:25:31.924  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:25:32.439  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:25:32.441  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:25:32.442  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:25:32.492  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:25:32.492  INFO 3728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 564 ms
-2019-04-16 23:25:32.496  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:25:32.678  INFO 3728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:25:32.774  INFO 3728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:25:32.809  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:25:32.810  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 1.094 seconds (JVM running for 906.963)
-2019-04-16 23:25:32.812  INFO 3728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:26:21.017  INFO 3728 --- [Thread-40] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:26:21.427  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:26:21.428  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:26:21.847  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:26:21.849  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:26:21.849  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:26:21.885  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:26:21.885  INFO 3728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 454 ms
-2019-04-16 23:26:21.889  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:26:21.950  WARN 3728 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcTestController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'com.lqq.name' in value "${com.lqq.name}"
-2019-04-16 23:26:21.950  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-04-16 23:26:21.961  INFO 3728 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+2019-04-17 00:00:01.307  INFO 5852 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 00:00:01.317  INFO 5852 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 19:47:42.167  INFO 2756 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 2756 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 19:47:42.170  INFO 2756 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,dev
+2019-04-17 19:47:43.976  INFO 2756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-04-17 19:47:44.008  INFO 2756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 19:47:44.008  INFO 2756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 19:47:44.163  INFO 2756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 19:47:44.164  INFO 2756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1861 ms
+2019-04-17 19:47:44.171  INFO 2756 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 19:47:44.659  INFO 2756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 19:47:44.968  INFO 2756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-04-17 19:47:44.973  INFO 2756 --- [main] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.337 seconds (JVM running for 4.33)
+2019-04-17 19:47:58.178  INFO 2756 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 19:47:58.179  INFO 2756 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-17 19:47:58.188  INFO 2756 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-04-17 19:47:58.226  INFO 2756 --- [http-nio-80-exec-1] c.l.b.controller.JdbcTestController      : 使用JdbcTemplate查询数据库
+2019-04-17 19:47:58.234 DEBUG 2756 --- [http-nio-80-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [select * from tb_book]
+2019-04-17 19:47:59.092  INFO 2756 --- [http-nio-80-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-04-17 19:51:14.173  INFO 2756 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 19:51:14.178  INFO 2756 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 19:51:14.239  INFO 2756 --- [RMI TCP Connection(2)-127.0.0.1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-04-17 20:10:46.285  INFO 6044 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 6044 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 20:10:46.288  INFO 6044 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,dev
+2019-04-17 20:10:48.078  INFO 6044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-04-17 20:10:48.117  INFO 6044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 20:10:48.117  INFO 6044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 20:10:48.256  INFO 6044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 20:10:48.256  INFO 6044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1884 ms
+2019-04-17 20:10:48.262  INFO 6044 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 20:10:48.738  INFO 6044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 20:10:49.037  INFO 6044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-04-17 20:10:49.043  INFO 6044 --- [main] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.285 seconds (JVM running for 4.169)
+2019-04-17 20:10:56.926  INFO 6044 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 20:10:56.934  INFO 6044 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 20:42:24.359  INFO 5648 --- [main] com.lqq.bookbar.BookbarApplicationTests  : Starting BookbarApplicationTests on LQQ-PC with PID 5648 (started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 20:42:24.360  INFO 5648 --- [main] com.lqq.bookbar.BookbarApplicationTests  : The following profiles are active: person,dev
+2019-04-17 20:42:27.869  INFO 5648 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 20:42:29.277  INFO 5648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 20:42:30.396  INFO 5648 --- [main] com.lqq.bookbar.BookbarApplicationTests  : Started BookbarApplicationTests in 7.196 seconds (JVM running for 9.342)
+2019-04-17 20:42:31.122  INFO 5648 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 20:59:53.898  INFO 7276 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 7276 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 20:59:53.926  INFO 7276 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,dev
+2019-04-17 20:59:55.736  INFO 7276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-04-17 20:59:55.770  INFO 7276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 20:59:55.771  INFO 7276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 20:59:55.957  INFO 7276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 20:59:55.958  INFO 7276 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1946 ms
+2019-04-17 20:59:55.967  INFO 7276 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 20:59:56.506  INFO 7276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 20:59:56.852 ERROR 7276 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-80]]
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-04-16 23:26:21.977 ERROR 3728 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcTestController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'com.lqq.name' in value "${com.lqq.name}"
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-	at com.lqq.bookbar.BookbarApplication.main(BookbarApplication.java:10) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_181]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_181]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_181]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.4.RELEASE.jar:2.1.4.RELEASE]
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'com.lqq.name' in value "${com.lqq.name}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	... 22 common frames omitted
+	at com.lqq.bookbar.BookbarApplication.main(BookbarApplication.java:21) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 14 common frames omitted
 
-2019-04-16 23:28:06.071  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:28:06.072  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:28:06.568  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:28:06.569  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:28:06.570  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:28:06.596  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:28:06.596  INFO 3728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 521 ms
-2019-04-16 23:28:06.603  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:28:06.738  INFO 3728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:28:06.825  INFO 3728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:28:06.863  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:28:06.865  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.852 seconds (JVM running for 1061.022)
-2019-04-16 23:28:06.868  INFO 3728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:28:35.713  INFO 3728 --- [Thread-46] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:28:36.067  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:28:36.067  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:28:36.492  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:28:36.494  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:28:36.494  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:28:36.513  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:28:36.513  INFO 3728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 443 ms
-2019-04-16 23:28:36.517  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:28:36.662  INFO 3728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:28:36.746  INFO 3728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:28:36.773  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:28:36.774  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.746 seconds (JVM running for 1090.932)
-2019-04-16 23:28:36.777  INFO 3728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:28:55.436  INFO 3728 --- [Thread-55] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:28:55.781  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 3728 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:28:55.782  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:28:56.157  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:28:56.159  INFO 3728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:28:56.159  INFO 3728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:28:56.199  INFO 3728 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:28:56.200  INFO 3728 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 414 ms
-2019-04-16 23:28:56.204  INFO 3728 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:28:56.331  INFO 3728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:28:56.405  INFO 3728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:28:56.435  INFO 3728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:28:56.436  INFO 3728 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.694 seconds (JVM running for 1110.595)
-2019-04-16 23:28:56.439  INFO 3728 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:28:58.445  INFO 3728 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-04-16 23:28:58.448  INFO 3728 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:29:38.227  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 6176 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:29:38.244  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:29:38.305  INFO 6176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-04-16 23:29:38.305  INFO 6176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-04-16 23:29:40.104  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:29:40.138  INFO 6176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:29:40.139  INFO 6176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:29:40.267  INFO 6176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:29:40.268  INFO 6176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1962 ms
-2019-04-16 23:29:40.276  INFO 6176 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:29:40.790  INFO 6176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:29:41.055  INFO 6176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:29:41.133  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:29:41.138  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.401 seconds (JVM running for 4.346)
-2019-04-16 23:29:53.122  INFO 6176 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-04-16 23:29:53.123  INFO 6176 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-04-16 23:29:53.133  INFO 6176 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2019-04-16 23:29:53.308  INFO 6176 --- [http-nio-80-exec-1] c.l.b.controller.JdbcTestController      : 使用JdbcTemplate查询数据库
-2019-04-16 23:29:53.316 DEBUG 6176 --- [http-nio-80-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [select * from tb_book]
-2019-04-16 23:29:54.091  INFO 6176 --- [http-nio-80-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-04-16 23:33:59.802  INFO 6176 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:33:59.903  INFO 6176 --- [Thread-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-04-16 23:34:00.361  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 6176 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:34:00.362  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:34:00.887  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:34:00.888  INFO 6176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:34:00.888  INFO 6176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:34:00.911  INFO 6176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:34:00.911  INFO 6176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 546 ms
-2019-04-16 23:34:00.915  INFO 6176 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:34:01.067  INFO 6176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:34:01.166  INFO 6176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:34:01.203  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:34:01.203  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.888 seconds (JVM running for 264.422)
-2019-04-16 23:34:01.207  INFO 6176 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:34:38.276  INFO 6176 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:34:38.777  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 6176 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:34:38.778  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:34:39.290  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:34:39.291  INFO 6176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:34:39.292  INFO 6176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:34:39.313  INFO 6176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:34:39.313  INFO 6176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 532 ms
-2019-04-16 23:34:39.317  INFO 6176 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:34:39.458  INFO 6176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:34:39.546  INFO 6176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:34:39.587  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:34:39.588  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.862 seconds (JVM running for 302.809)
-2019-04-16 23:34:39.592  INFO 6176 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:37:47.058  INFO 6176 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:37:47.446  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 6176 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:37:47.446  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:37:47.872  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:37:47.873  INFO 6176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:37:47.874  INFO 6176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:37:47.954  INFO 6176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:37:47.955  INFO 6176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 505 ms
-2019-04-16 23:37:47.963  INFO 6176 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:37:48.110  INFO 6176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:37:48.199  INFO 6176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:37:48.241  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:37:48.242  INFO 6176 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.839 seconds (JVM running for 491.469)
-2019-04-16 23:37:48.245  INFO 6176 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:37:49.885  INFO 6176 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-04-16 23:37:49.889  INFO 6176 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:41:36.493  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 4224 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:41:36.497  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:41:36.574  INFO 4224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-04-16 23:41:36.574  INFO 4224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-04-16 23:41:38.311  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:41:38.345  INFO 4224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:41:38.345  INFO 4224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:41:38.508  INFO 4224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:41:38.509  INFO 4224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1934 ms
-2019-04-16 23:41:38.516  INFO 4224 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:41:39.017  INFO 4224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:41:39.305  INFO 4224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:41:39.384  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:41:39.389  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.384 seconds (JVM running for 4.34)
-2019-04-16 23:42:00.387  INFO 4224 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-04-16 23:42:00.388  INFO 4224 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-04-16 23:42:00.397  INFO 4224 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-04-16 23:42:00.577  INFO 4224 --- [http-nio-80-exec-1] c.l.b.controller.JdbcTestController      : 使用JdbcTemplate查询数据库
-2019-04-16 23:42:00.586 DEBUG 4224 --- [http-nio-80-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [select * from tb_book]
-2019-04-16 23:42:01.343  INFO 4224 --- [http-nio-80-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-04-16 23:44:48.958  INFO 4224 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:44:49.043  INFO 4224 --- [Thread-6] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-04-16 23:44:49.429  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 4224 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:44:49.430  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:44:49.909  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:44:49.911  INFO 4224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:44:49.911  INFO 4224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:44:49.932  INFO 4224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:44:49.933  INFO 4224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 500 ms
-2019-04-16 23:44:49.938  INFO 4224 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:44:50.092  INFO 4224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:44:50.224  INFO 4224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:44:50.280  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:44:50.281  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.901 seconds (JVM running for 195.232)
-2019-04-16 23:44:50.284  INFO 4224 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:45:13.051  INFO 4224 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:45:13.471  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 4224 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:45:13.472  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:45:13.915  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:45:13.917  INFO 4224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:45:13.917  INFO 4224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:45:13.952  INFO 4224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:45:13.952  INFO 4224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 475 ms
-2019-04-16 23:45:13.956  INFO 4224 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:45:14.094  INFO 4224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:45:14.190  INFO 4224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:45:14.229  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:45:14.230  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.811 seconds (JVM running for 219.182)
-2019-04-16 23:45:14.234  INFO 4224 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:47:36.118  INFO 4224 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:47:36.553  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 4224 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:47:36.553  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:47:36.979  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:47:36.981  INFO 4224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:47:36.981  INFO 4224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:47:37.003  INFO 4224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:47:37.003  INFO 4224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 446 ms
-2019-04-16 23:47:37.007  INFO 4224 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:47:37.142  INFO 4224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:47:37.231  INFO 4224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:47:37.265  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:47:37.266  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.76 seconds (JVM running for 362.222)
-2019-04-16 23:47:37.269  INFO 4224 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:48:13.289  INFO 4224 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:48:13.715  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 4224 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:48:13.716  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:48:14.144  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:48:14.145  INFO 4224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:48:14.146  INFO 4224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:48:14.199  INFO 4224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:48:14.199  INFO 4224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 479 ms
-2019-04-16 23:48:14.203  INFO 4224 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:48:14.332  INFO 4224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:48:14.429  INFO 4224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:48:14.463  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:48:14.464  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.791 seconds (JVM running for 399.42)
-2019-04-16 23:48:14.466  INFO 4224 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:48:29.132  INFO 4224 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:48:29.452  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 4224 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:48:29.452  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : No active profile set, falling back to default profiles: default
-2019-04-16 23:48:29.857  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:48:29.858  INFO 4224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:48:29.859  INFO 4224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:48:29.930  INFO 4224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:48:29.930  INFO 4224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 474 ms
-2019-04-16 23:48:29.937  INFO 4224 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:48:30.087  INFO 4224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:48:30.183  INFO 4224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:48:30.221  INFO 4224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:48:30.222  INFO 4224 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.812 seconds (JVM running for 415.178)
-2019-04-16 23:48:30.225  INFO 4224 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:53:57.599  INFO 4224 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-04-16 23:53:57.604  INFO 4224 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:54:11.513  INFO 6888 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 6888 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:54:11.517  INFO 6888 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : The following profiles are active: prd
-2019-04-16 23:54:11.599  INFO 6888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-04-16 23:54:11.600  INFO 6888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-04-16 23:54:13.395  INFO 6888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-04-16 23:54:13.431  INFO 6888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:54:13.431  INFO 6888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:54:13.562  INFO 6888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:54:13.562  INFO 6888 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1962 ms
-2019-04-16 23:54:13.569  INFO 6888 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:54:14.072  INFO 6888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:54:14.345  INFO 6888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:54:14.433  INFO 6888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-16 23:54:14.438  INFO 6888 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.46 seconds (JVM running for 4.464)
-2019-04-16 23:54:21.083  INFO 6888 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-04-16 23:54:21.087  INFO 6888 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:54:40.992  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 5852 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:54:40.995  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : The following profiles are active: dev
-2019-04-16 23:54:41.068  INFO 5852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-04-16 23:54:41.068  INFO 5852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-04-16 23:54:43.196  INFO 5852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:54:43.239  INFO 5852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:54:43.240  INFO 5852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:54:43.424  INFO 5852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:54:43.424  INFO 5852 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2355 ms
-2019-04-16 23:54:43.433  INFO 5852 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:54:43.964  INFO 5852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:54:44.266  INFO 5852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:54:44.366  INFO 5852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:54:44.374  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.954 seconds (JVM running for 4.936)
-2019-04-16 23:55:54.947  INFO 5852 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:55:55.401  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 5852 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:55:55.402  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : The following profiles are active: dev
-2019-04-16 23:55:55.889  INFO 5852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:55:55.891  INFO 5852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:55:55.892  INFO 5852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:55:55.934  INFO 5852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:55:55.934  INFO 5852 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 528 ms
-2019-04-16 23:55:55.938  INFO 5852 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:55:56.105  INFO 5852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:55:56.249  INFO 5852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:55:56.282  INFO 5852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:55:56.284  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.942 seconds (JVM running for 76.85)
-2019-04-16 23:55:56.288  INFO 5852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:55:58.736  INFO 5852 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:55:59.124  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 5852 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
-2019-04-16 23:55:59.124  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : The following profiles are active: dev
-2019-04-16 23:55:59.578  INFO 5852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2019-04-16 23:55:59.580  INFO 5852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-16 23:55:59.580  INFO 5852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2019-04-16 23:55:59.600  INFO 5852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-16 23:55:59.601  INFO 5852 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 473 ms
-2019-04-16 23:55:59.605  INFO 5852 --- [restartedMain] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
-2019-04-16 23:55:59.749  INFO 5852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-16 23:55:59.846  INFO 5852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-04-16 23:55:59.889  INFO 5852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2019-04-16 23:55:59.890  INFO 5852 --- [restartedMain] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 0.813 seconds (JVM running for 80.456)
-2019-04-16 23:55:59.893  INFO 5852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-04-16 23:56:02.293  INFO 5852 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 20:59:56.862  INFO 7276 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-04-17 20:59:56.916  INFO 7276 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-04-17 20:59:56.922 ERROR 7276 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2019-04-17 20:59:56.926  INFO 7276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:08:37.347  INFO 7940 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 7940 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 22:08:37.350  INFO 7940 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,dev
+2019-04-17 22:08:39.244  INFO 7940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-04-17 22:08:39.282  INFO 7940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 22:08:39.283  INFO 7940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 22:08:39.435  INFO 7940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 22:08:39.435  INFO 7940 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1996 ms
+2019-04-17 22:08:39.443  INFO 7940 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 22:08:39.974  INFO 7940 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:08:40.333  INFO 7940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-04-17 22:08:40.338  INFO 7940 --- [main] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.549 seconds (JVM running for 4.588)
+2019-04-17 22:08:47.584  INFO 7940 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 22:08:47.590  INFO 7940 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:09:17.735  INFO 2876 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 2876 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 22:09:17.738  INFO 2876 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,dev
+2019-04-17 22:09:19.409  INFO 2876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-04-17 22:09:19.442  INFO 2876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 22:09:19.443  INFO 2876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 22:09:19.610  INFO 2876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 22:09:19.611  INFO 2876 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1796 ms
+2019-04-17 22:09:19.621  INFO 2876 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 22:09:20.129  INFO 2876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:09:20.446  INFO 2876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-04-17 22:09:20.451  INFO 2876 --- [main] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.301 seconds (JVM running for 4.367)
+2019-04-17 22:09:29.068  INFO 2876 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 22:09:29.072  INFO 2876 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:20:29.767  INFO 5528 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 5528 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 22:20:29.771  INFO 5528 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,prod
+2019-04-17 22:20:31.473  INFO 5528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-17 22:20:31.509  INFO 5528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 22:20:31.510  INFO 5528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 22:20:31.673  INFO 5528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 22:20:31.673  INFO 5528 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1826 ms
+2019-04-17 22:20:31.683  INFO 5528 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 22:20:32.201  INFO 5528 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:20:32.534  INFO 5528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-17 22:20:32.540  INFO 5528 --- [main] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.347 seconds (JVM running for 4.295)
+2019-04-17 22:21:21.477  INFO 5528 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 22:21:21.483  INFO 5528 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:36:37.406  INFO 7804 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 7804 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 22:36:37.409  INFO 7804 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,prod
+2019-04-17 22:36:39.287  INFO 7804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-17 22:36:39.321  INFO 7804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 22:36:39.322  INFO 7804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 22:36:39.472  INFO 7804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 22:36:39.473  INFO 7804 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1988 ms
+2019-04-17 22:36:39.480  INFO 7804 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 22:36:39.969  INFO 7804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:36:40.290  INFO 7804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-17 22:36:40.295  INFO 7804 --- [main] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.465 seconds (JVM running for 4.368)
+2019-04-17 22:36:50.146  INFO 7804 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 22:36:50.149  INFO 7804 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:38:29.542  INFO 7512 --- [main] com.lqq.bookbar.BookbarApplication       : Starting BookbarApplication on LQQ-PC with PID 7512 (D:\Develop\repositories\spring-boot-starter\bookbar\target\classes started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 22:38:29.545  INFO 7512 --- [main] com.lqq.bookbar.BookbarApplication       : The following profiles are active: person,prod
+2019-04-17 22:38:31.200  INFO 7512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-17 22:38:31.241  INFO 7512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 22:38:31.243  INFO 7512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 22:38:31.425  INFO 7512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 22:38:31.425  INFO 7512 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1804 ms
+2019-04-17 22:38:31.432  INFO 7512 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 22:38:31.919  INFO 7512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:38:32.304  INFO 7512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-17 22:38:32.311  INFO 7512 --- [main] com.lqq.bookbar.BookbarApplication       : Started BookbarApplication in 3.316 seconds (JVM running for 4.255)
+2019-04-17 22:38:39.262  INFO 7512 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-17 22:38:39.265  INFO 7512 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:39:25.000  INFO 7716 --- [main] com.lqq.bookbar.BookbarApplicationTests  : Starting BookbarApplicationTests on LQQ-PC with PID 7716 (started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 22:39:25.003  INFO 7716 --- [main] com.lqq.bookbar.BookbarApplicationTests  : The following profiles are active: person,prod
+2019-04-17 22:39:28.334  INFO 7716 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 22:39:29.783  INFO 7716 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:39:30.927  INFO 7716 --- [main] com.lqq.bookbar.BookbarApplicationTests  : Started BookbarApplicationTests in 6.68 seconds (JVM running for 8.752)
+2019-04-17 22:39:31.757  INFO 7716 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:55:23.558  INFO 6444 --- [main] com.lqq.bookbar.BookbarApplicationTests  : Starting BookbarApplicationTests on LQQ-PC with PID 6444 (started by LQQ in D:\Develop\repositories\spring-boot-starter\bookbar)
+2019-04-17 22:55:23.561  INFO 6444 --- [main] com.lqq.bookbar.BookbarApplicationTests  : The following profiles are active: person,dev
+2019-04-17 22:55:27.003  INFO 6444 --- [main] com.lqq.bookbar.DruidConfiguration       : init Druid Servlet Configuration 
+2019-04-17 22:55:28.439  INFO 6444 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-17 22:55:30.111  INFO 6444 --- [main] com.lqq.bookbar.BookbarApplicationTests  : Started BookbarApplicationTests in 7.414 seconds (JVM running for 9.25)
+2019-04-17 22:55:30.720  INFO 6444 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

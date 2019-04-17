@@ -16,6 +16,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<!-- 为保证maven能够正常打包，不出现乱码 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -36,19 +38,19 @@
 		    <artifactId>ojdbc6</artifactId>
 		    <version>12.1.0.1-atlassian-hosted</version>
 		</dependency>
-		<!-- 添加阿里巴巴数据库连接池 -->
+		<!-- 添加阿里巴巴数据库连接池 启动后访问路径/druid，用户名、密码：admin -->
 		 <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.9</version>
         </dependency>
-		<!-- 支持热部署 -->
+		<!-- 支持热部署 
 		<dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-devtools</artifactId>
 	        <optional>true</optional>
     	</dependency>
-		
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -65,12 +67,34 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
+<!-- 切换开发、测试、生产环境,配置后spring读取这里面的默认激活文件 ,ide中运行需要手动点击项目》属性》maven》active profile-->
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<spring.profiles.active>dev</spring.profiles.active>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<spring.profiles.active>prod</spring.profiles.active>
+			</properties>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- 配置主入口，否则打成jar包后提示找不到主类 -->
+				<configuration>
+					<mainClass>com.lqq.bookbar.BookbarApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
