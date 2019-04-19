@@ -66,8 +66,30 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- 引入bootstrap -->
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>bootstrap</artifactId>
+		    <version>3.3.5</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>jquery</artifactId>
+		    <version>3.1.1</version>
+		</dependency>
+		<!-- 引入nekohtml解除html严格语法限制 -->
+		<dependency>
+		    <groupId>net.sourceforge.nekohtml</groupId>
+		    <artifactId>nekohtml</artifactId>
+		</dependency>
+		
+		 <!--引入thymeleaf-->
+		 <dependency>
+		     <groupId>org.springframework.boot</groupId>
+		     <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		 </dependency>
 	</dependencies>
-<!-- 切换开发、测试、生产环境,配置后spring读取这里面的默认激活文件 ,ide中运行需要手动点击项目》属性》maven》active profile-->
+<!-- 切换开发、测试、生产环境,配置后spring读取这里面的激活文件 ,ide中运行需要手动点击项目》属性》maven》active profile-->
 	<profiles>
 		<profile>
 			<id>dev</id>
