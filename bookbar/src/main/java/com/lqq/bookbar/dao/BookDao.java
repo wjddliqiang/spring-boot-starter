@@ -24,6 +24,7 @@ public class BookDao {
 			public void processRow(ResultSet rs) throws SQLException {
 				System.out.println(rs.getString("bname"));
 				System.out.println(rs.getString("author"));
+				
 			}
 		});
 		return null;
