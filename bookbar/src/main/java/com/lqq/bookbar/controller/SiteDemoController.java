@@ -15,9 +15,9 @@ import com.lqq.bookbar.entity.ArticleDemo;
  * @author LQQ
  *
  */
+
 @Controller
 public class SiteDemoController {
-   
 	@RequestMapping("/index")
 	public String index(Model model) {
 		ArrayList<ArticleDemo> list = new ArrayList<>();
@@ -26,7 +26,7 @@ public class SiteDemoController {
         list.add(new ArticleDemo("学习Python的建议","Python是最容易入门的编程语言。","www.baidu.com"));
         
         model.addAttribute("articleList",list);
-        
-		return "layuitemplate";
+		return "login";
 	}
+
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"  
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">  
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}"/>
+	<script th:src="@{/layui/layui.js}"></script>
+	<style>
+	.layui-table td, .layui-table th{
+		padding: 5px 6px;
+	}
+</style>
+</head>
+<body>
+
+
+	<form class="layui-form layui-form-pane" th:action="@{/login}">
+      <h1>欢迎使用共享书吧</h1>
+  
+	  <div class="layui-form-item" pane>
+	    <label class="layui-form-label">用户名</label>
+	    <div class="layui-input-block">
+	    	<input type="text" name="uid" required="" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input" />
+	  	</div>
+	  </div>
+	   <div class="layui-form-item" pane>
+		    <label class="layui-form-label">密码</label>
+		    <div class="layui-input-block">
+		    <div>
+		    	<input type="password" name="pwd" required="" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" />
+		  	</div>
+		  </div>
+	   </div>
+	   
+	   <button class="layui-btn" lay-submit="" lay-filter="formDemoPane">立即提交</button>
+	</form>
+	
+	
+	<script>
+//Demo
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemoPane)', function(data){
+    //layer.msg(JSON.stringify(data.field));
+    return true;
+  });
+});
+</script>
+</body>
+</html>

@@ -1,13 +1,11 @@
 package com.lqq.bookbar.controller;
 
-
-import java.util.List;
+import java.util.ArrayList;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -24,7 +22,6 @@ public class JdbcTestController {
 	private String name;
 	@Autowired
 	private Person person;
-
 
 	private Logger logger = LoggerFactory.getLogger(JdbcTestController.class);
 	//注入jdbc模板
