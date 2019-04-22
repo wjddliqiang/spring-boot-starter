@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,7 +58,7 @@ public class LoginController {
 			
 		},new Object[] {uid,pwd});
 		//queryForList    使用此方法取多条记录
-		
+		List<Map<String, Object>> list = jdbcTemplate.queryForList(sqlString, uid,pwd);
 		
 		
 		
