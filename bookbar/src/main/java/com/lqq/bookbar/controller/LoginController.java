@@ -55,7 +55,7 @@ public class LoginController {
 				return user;
 			}
 			
-			
+			   
 		},new Object[] {uid,pwd});
 		//queryForList    使用此方法取多条记录
 		List<Map<String, Object>> list = jdbcTemplate.queryForList(sqlString, uid,pwd);
