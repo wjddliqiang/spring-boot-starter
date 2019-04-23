@@ -43,22 +43,19 @@ public class LoginController {
 		//写法1 User实现接口rowMapper
 		User user = jdbcTemplate.queryForObject(sqlString, rowMapper, new Object[]{uid,pwd});
 		//写法2 使用匿名内部类 RowMapper
-		User user1 = jdbcTemplate.queryForObject(sqlString, new RowMapper<User>() {
-			@Override
-			public User mapRow(ResultSet rs, int rowNum) throws SQLException {
-				User user = new User();
-				if (rs != null) {
-					user.setId(rs.getString("id"));
-					user.setUserid(rs.getString("userid"));
-					user.setPwd(rs.getString("pwd"));
-				}
-				return user;
-			}
-			
-			   
-		},new Object[] {uid,pwd});
+		/*
+		 * User user1 = jdbcTemplate.queryForObject(sqlString, new RowMapper<User>() {
+		 * 
+		 * @Override public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+		 * User user = new User(); if (rs != null) { user.setId(rs.getString("id"));
+		 * user.setUserid(rs.getString("userid")); user.setPwd(rs.getString("pwd")); }
+		 * return user; }
+		 * 
+		 * 
+		 * },new Object[] {uid,pwd});
+		 */
 		//queryForList    使用此方法取多条记录
-		List<Map<String, Object>> list = jdbcTemplate.queryForList(sqlString, uid,pwd);
+		//List<Map<String, Object>> list = jdbcTemplate.queryForList(sqlString, uid,pwd);
 		
 		
 		

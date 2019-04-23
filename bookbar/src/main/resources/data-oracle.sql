@@ -1,0 +1,1 @@
+insert into tb_book(id,bname,author) values(1,'相对论','爱因斯坦');
