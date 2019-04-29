@@ -26,6 +26,8 @@ public class PrimaryKeyHelper {
 		return java.util.UUID.randomUUID().toString().toUpperCase().replace("-", "").substring(0, 19)+System.currentTimeMillis();
 	}
 	
+	
+	
 	public static void main(String[] args) {
 		System.out.println(getGuidKey());
 		System.out.println(getCompKey());
