@@ -4,6 +4,7 @@ HELP.md
 
 ### me  ###
 .log
+/logs/
 ### STS ###
 .apt_generated
 .classpath

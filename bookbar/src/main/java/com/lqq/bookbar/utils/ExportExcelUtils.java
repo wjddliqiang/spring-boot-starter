@@ -25,6 +25,16 @@ import com.alibaba.druid.sql.ast.statement.SQLWithSubqueryClause.Entry;
  * Created by zouLu on 2017-12-14.
  */
 public class ExportExcelUtils {
+	
+	public static final String SERVER_FILE_PATH = System.getProperty("user.dir")+"\\src\\main\\resources\\public\\";
+	
+	/**
+	 * 将excel文件输出到用户端下载
+	 * @param response
+	 * @param fileName
+	 * @param data
+	 * @throws Exception
+	 */
     public static void exportExcelToUser(HttpServletResponse response, String fileName, ExcelData data) throws Exception {
         // 告诉浏览器用什么软件可以打开此文件
         response.setHeader("content-Type", "application/vnd.ms-excel");
@@ -33,9 +43,25 @@ public class ExportExcelUtils {
         exportExcel(data, response.getOutputStream());
     }
     
+    /**
+     * 将excel输出到服务器的指定目录下
+     * @param filePath  服务器目录，以斜杠结尾'\'
+     * @param fileName
+     * @param data
+     * @throws Exception
+     */
     public static void exportExcelToServer(String filePath, String fileName, ExcelData data) throws Exception {
-        OutputStream oStream = new FileOutputStream(filePath+"\\fileName");
+        OutputStream oStream = new FileOutputStream(filePath+fileName);
         exportExcel(data, oStream);
+    }
+    /**
+     * 输出到默认的public目录下
+     * @param fileName
+     * @param data
+     * @throws Exception
+     */
+    public static void exportExcelToServer( String fileName, ExcelData data) throws Exception {
+    	exportExcelToServer(ExportExcelUtils.SERVER_FILE_PATH,fileName,data);
     }
 
     public static void exportExcel(ExcelData data, OutputStream out) throws Exception {
@@ -57,12 +83,9 @@ public class ExportExcelUtils {
     }
 
     private static void writeExcel(XSSFWorkbook wb, Sheet sheet, ExcelData data) {
-
-        int rowIndex = 0;
-
-        rowIndex = writeTitlesToExcel(wb, sheet, data.getTitles());
+        int rowIndex = writeTitlesToExcel(wb, sheet, data.getTitles());
         writeRowsToExcel(wb, sheet, data, rowIndex);
-        autoSizeColumns(sheet, data.getTitles().size() + 1);
+        //autoSizeColumns(sheet, data.getTitles().size() + 1);
 
     }
 
@@ -96,8 +119,6 @@ public class ExportExcelUtils {
     }
 
     private static int writeRowsToExcel(XSSFWorkbook wb, Sheet sheet, ExcelData rows, int rowIndex) {
-        int colIndex = 0;
-
         Font dataFont = wb.createFont();
         dataFont.setFontName("simsun");
         // dataFont.setFontHeightInPoints((short) 14);
@@ -113,13 +134,9 @@ public class ExportExcelUtils {
             // dataRow.setHeightInPoints(25);
             //按行填充数据
             for (int i = 0; i < rows.getTitles().size(); i++) {
-            	 Cell cell = dataRow.createCell(colIndex);
+            	 Cell cell = dataRow.createCell(i);
             	 String cellData = rowData.get(titles.get(i));
-            	 if (cellData != null) {
-                     cell.setCellValue(cellData.toString());
-                 } else {
-                     cell.setCellValue("");
-                 }
+            	 cell.setCellValue(cellData == null?"":cellData.toString());
                  cell.setCellStyle(dataStyle);//设置单元格样式
 			}
             rowIndex++;
