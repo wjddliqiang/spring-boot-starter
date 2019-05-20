@@ -43,7 +43,12 @@
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.4.0</version>
 		</dependency>
-		 
+		 <!-- 添加redis支持 -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-data-redis</artifactId>
+		    <version>2.1.4.RELEASE</version>
+		</dependency>
 		
 		<!-- 添加阿里巴巴数据库连接池 启动后访问路径/druid，用户名、密码：admin -->
 		 <dependency>
@@ -74,6 +79,12 @@
 	        <optional>true</optional>
     	</dependency>
 		-->
+		<!-- 增加消息队列支持 -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-activemq</artifactId>
+		    <version>2.1.5.RELEASE</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
