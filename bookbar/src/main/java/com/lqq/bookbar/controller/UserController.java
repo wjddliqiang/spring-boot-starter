@@ -20,13 +20,20 @@ public class UserController {
         user.setUname(userName);
         user.setPwd(passWord);
         user.setId(String.valueOf(id));
-        redisService.set(String.valueOf(id), user);
+        if (redisService.isConnOk()) {
+        	redisService.set(String.valueOf(id), user);
+		}
         return "success";
     }
 
     @RequestMapping("/getUserById")
     public User getUserById(Long id) {
-        User res = (User) redisService.get(String.valueOf(id));
+    	User res = null;
+    	if (redisService.isConnOk()) {
+    		res = (User) redisService.get(String.valueOf(id));
+            System.out.println(res);
+		}
+        
         return res;
     }
 }

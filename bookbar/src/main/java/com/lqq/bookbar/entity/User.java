@@ -94,6 +94,5 @@ public class User implements RowMapper<User>, Serializable{
 		}
 		return user;
 	}
-	
 
 }
