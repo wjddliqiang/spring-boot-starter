@@ -6,8 +6,11 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Stack;
 
+import org.apache.naming.java.javaURLContextFactory;
 import org.junit.Test;
 
 public class Java5Tester {
@@ -25,6 +28,12 @@ public class Java5Tester {
 		//List<Integer> list2 = {[1,2,32,4,34]};
 		
 	}
+	
+	@Test
+	public void testJavaHeapAndGen() {
+		System.out.println(1<<30);
+	}
+	
 	@Test
 	public void testEnum() {
 		System.out.println(Car.sanlun.toString());
