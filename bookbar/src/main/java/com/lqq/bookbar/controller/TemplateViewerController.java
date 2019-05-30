@@ -12,16 +12,22 @@ import org.springframework.web.servlet.ModelAndView;
  *
  */
 @Controller
+@RequestMapping("v")
 public class TemplateViewerController {
 
 	
-	@RequestMapping("/loginview")
-	public ModelAndView login() {
+	@RequestMapping("/login")
+	public ModelAndView html1() {
 		System.out.println("怎么啦1？");
 		return new ModelAndView("login");
 	}
 	
-	@RequestMapping("/mainview")
+	@RequestMapping("/login2")
+	public String html2() {
+		return "login2";
+	}
+	
+	@RequestMapping("/main")
 	public String main() {
 		System.out.println("怎么啦2？");
 		return "main";
