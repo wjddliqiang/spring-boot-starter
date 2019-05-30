@@ -32,7 +32,7 @@ public class UserController {
     	if (redisService.isConnOk()) {
     		res = (User) redisService.get(String.valueOf(id));
             System.out.println(res);
-		}
+	}
         
         return res;
     }
