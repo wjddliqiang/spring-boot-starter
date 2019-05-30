@@ -9,13 +9,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.SocketException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Period;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -32,6 +37,7 @@ import org.apache.http.client.methods.RequestBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.apache.naming.java.javaURLContextFactory;
 
 import com.jacob.activeX.ActiveXComponent;
 import com.jacob.com.Dispatch;
@@ -205,12 +211,45 @@ public class HttpClientApp {
 	        System.gc();
 	}
 	
-	public void moveFileToDefaultDir(File file) {
-		if (file == null) {
-			return;
+	/**
+	 * 将所有默认目录下的文件移动至历史目录下,检查历史目录下的文件超过一个星期的就压缩存储
+	 */
+	public void moveFileToDefaultDir() {
+		File[] files = new File(DEFAULT_FILE_PATH).listFiles();
+		for (File file2 : files) {
+			if (file2.isFile()) {
+				//移动文件至默认归档目录
+				file2.renameTo(new File(DEFAULT_FILE_HIS_PATH+"\\"+file2.getName()));
+			}
 		}
-		//移动文件至默认归档目录
-		file.renameTo(new File(DEFAULT_FILE_HIS_PATH+"\\"+file.getName()));
+		
+		//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd").withZone(ZoneId.systemDefault());
+		Instant lastweekInstant = Instant.now().minusSeconds(86400 * 7);
+		File[] files2 = new File(DEFAULT_FILE_HIS_PATH).listFiles();
+		for (File file : files2) {
+			if (file.isFile() ) {
+				Instant instant = Instant.ofEpochMilli(file.lastModified());//获取上次文件修改日期
+				if (instant.isBefore(lastweekInstant)) {
+					//开始压缩
+					//java.util.zip.ZipEntry
+				}
+			}
+		}
+	}
+	
+	public static void main2(String[] args) {
+		/*
+		 * File file = new
+		 * File("D:\\我的工作\\BI运维\\手工数据\\手机日报上传\\手机日报增量\\AEON_ShouJiZhiFu_20190522.xls");
+		 * SimpleDateFormat sdfDateFormat = new SimpleDateFormat("yyyyMMdd");
+		 * System.out.println(sdfDateFormat.format(new Date(file.lastModified())));
+		 * 
+		 * Instant instant = Instant.ofEpochMilli(file.lastModified());
+		 * DateTimeFormatter formatter =
+		 * DateTimeFormatter.ofPattern("yyyyMMdd").withZone(ZoneId.systemDefault());
+		 * System.out.println(formatter.format(instant));
+		 */
+		//System.out.println(3600*24);
 	}
 
 	public static void main(String[] args) throws ClientProtocolException, IOException, Exception {
@@ -218,7 +257,7 @@ public class HttpClientApp {
 		HttpClientApp app = new HttpClientApp();
 		LocalDate localDate = app.getLastUploadFileDate();
 		//使用Date和SimpleDateFormat
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		
 		Map<String,File> list = app.getFileFromMY(localDate,yesterday);
 		FtpUtil.initDefaultFtpClient();
@@ -230,6 +269,7 @@ public class HttpClientApp {
 			//app.moveFileToDefaultDir(file);
 		}
 		FtpUtil.loginOutFtpClient();
+		app.moveFileToDefaultDir();
 		//File file = new File("D:\\我的工作\\BI运维\\手工数据\\手机日报上传\\AEON_ShouJiZhiFu_20190522.xls");
 		//移动已经上传完成的文件
 		
