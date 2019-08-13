@@ -64,7 +64,7 @@ public class HttpClientApp {
 	private Log logger = LogFactory.getLog(this.getClass());
 	
 	/**
-	 * 获取最近上传的文件时间，如果没有获取到，返回昨天
+	 * 获取最近上传的文件时间，如果没有获取到，返回null
 	 * @return
 	 */
 	public LocalDate getLastUploadFileDate() {
@@ -89,11 +89,6 @@ public class HttpClientApp {
 		}		
 		logger.info("3.获取目录下xls文件列表："+list);
 		
-		LocalDate yesterday = LocalDate.now().minusDays(1);
-		int year = yesterday.getYear();
-		int month = yesterday.getMonthValue();
-		int days = yesterday.getDayOfMonth();
-		
 		if (list.size() > 0) { //目录下有xls文件则排序，若无则默认取前一天
 			String[] list2 = (String[])list.toArray(new String[0]);
 			Arrays.sort(list2, new Comparator<String>() {
@@ -105,27 +100,42 @@ public class HttpClientApp {
 			});
 			logger.info("4.降序排列之后的xls文件列表："+Arrays.asList(list2));
 
-			year = Integer.parseInt(list2[0].substring(17, 21));
-			month = Integer.parseInt(list2[0].substring(21, 23));
-			days = Integer.parseInt(list2[0].substring(23, 25));
+			int year = Integer.parseInt(list2[0].substring(17, 21));
+			int month = Integer.parseInt(list2[0].substring(21, 23));
+			int days = Integer.parseInt(list2[0].substring(23, 25));
+			localDate = LocalDate.of(year, month, days);
 			logger.info("5.获取文件目录中最近的日期："+year+"-"+month+"-"+days);
-			
 		}
-		
-		localDate = LocalDate.of(year, month, days);
 		return localDate;
 	}
 	
 	/**
-	 * 从米雅获取特定日期的汇总文件
-	 * @return
+	 * 从米雅获取特定日期的汇总文件，
+	 * begin==end 只获取end日期的文件，begin<end获取(begin,end]期间的日期文件
+	 * @param begin 开始日期，不包含
+	 * @param end 结束日期，包含
+	 * @return 包含xlsx文件的MAP，key值为AEON_ShouJiZhiFu_yyyyMMdd.xls,value为File对象，名称为门店汇总_yyyy-MM-dd-系统当前毫秒数.xlsx
+	 * @throws ClientProtocolException
+	 * @throws IOException
+	 * @throws Exception
 	 */
-	public Map<String,File> getFileFromMY (LocalDate date,LocalDate date2) throws ClientProtocolException,IOException,Exception {
+	public Map<String,File> getFileFromMY (LocalDate begin,LocalDate end) throws ClientProtocolException,IOException,Exception {
 		
-		if (date == null || date2 == null || date.compareTo(date2) > 0) {
-			throw new Exception("开始日期、结束日期不能为空，开始日期不能大于结束日期");
+		if (begin == null || end == null || begin.compareTo(end) > 0) {
+			throw new Exception("开始日期、结束日期不能为空，开始日期不能大于等于结束日期");
 		}
-		int periodDays = Period.between(date, date2).getDays();
+		
+		int periodDays = Period.between(begin, end).getDays();
+		//按照(begin,end]的要求处理日期
+		List<LocalDate> listDates = new ArrayList<>();
+		if (periodDays == 0) {
+			listDates.add(end);
+		}else {
+			for (int i = 1; i <= periodDays; i++) {
+				listDates.add(begin.plusDays(i));
+			}
+		}
+		
 		CloseableHttpClient client = HttpClients.createDefault();
 		Map<String, File> list = new HashMap<String, File>();
 		//HttpPost post = new HttpPost("http://139.196.88.135/newmiya/login.jsp");
@@ -143,9 +153,9 @@ public class HttpClientApp {
         System.out.println("页面："+content);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyyMMdd");
-        for (int i = 0; i < periodDays; i++) {
-        	
-        	LocalDate curDate = date.minusDays(-1-i);
+       
+        
+        for (LocalDate curDate:listDates) {
         	//接下来要打开指定页面下载excel
            
             String dateString = curDate.format(formatter);
@@ -256,22 +266,32 @@ public class HttpClientApp {
 		LocalDate yesterday = LocalDate.now().minusDays(1);
 		HttpClientApp app = new HttpClientApp();
 		LocalDate localDate = app.getLastUploadFileDate();
+		
+		//如果获取的日期正好是昨天，说明这个已经执行过上传了，无需再次上传，返回即可
+		if (localDate != null && localDate.getYear()==yesterday.getYear() && localDate.getMonthValue()==yesterday.getMonthValue() 
+				&& localDate.getDayOfMonth() == yesterday.getDayOfMonth()) {
+			return;
+		}else if (localDate == null) {//若找不到历史上传文件，默认上传昨天的
+			
+			localDate = yesterday;
+		}
 		//使用Date和SimpleDateFormat
 		//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-		
 		Map<String,File> list = app.getFileFromMY(localDate,yesterday);
-		FtpUtil.initDefaultFtpClient();
+		List<File> files = new ArrayList<>();
 		for (Entry<String, File> entry : list.entrySet()) {
 			app.execExcelMicroOrder(entry.getValue());
-			//上传文件到服务器
 			File file = new File(entry.getKey());
-			FtpUtil.uploadDefaultFile(file);
+			files.add(file);
 			//app.moveFileToDefaultDir(file);
 		}
-		FtpUtil.loginOutFtpClient();
-		app.moveFileToDefaultDir();
+		//上传文件到服务器
+		FtpUtil.uploadDefaultFile(files);
+		
 		//File file = new File("D:\\我的工作\\BI运维\\手工数据\\手机日报上传\\AEON_ShouJiZhiFu_20190522.xls");
 		//移动已经上传完成的文件
+		app.moveFileToDefaultDir();
+
 		
 		
 	}

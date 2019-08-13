@@ -9,6 +9,7 @@ import ch.qos.logback.classic.Logger;
 
 import java.io.*;
 import java.net.SocketException;
+import java.util.List;
 
 public class FtpUtil {
 
@@ -16,14 +17,16 @@ public class FtpUtil {
 	private static final int DEFAULT_FTP_PORT = 21;
 	private static final String DEFAULT_FTP_USER_NAME = "ftprep";
 	private static final String DEFAULT_FTP_USER_PWD = "ftprep123";
+	//private static final String DEFAULT_FTP_REMOTE_DIR = "/APP/ftpdata/data_handmade";
+	private static final String DEFAULT_FTP_REMOTE_DIR = "/APP/ftpdata/data_handmade";
 	private static FTPClient ftpClient = new FTPClient();
-	private static final String DEFAULT_FILE_PATH = "D:\\我的工作\\BI运维\\手工数据\\手机日报上传";
+	//private static final String DEFAULT_FILE_PATH = "D:\\我的工作\\BI运维\\手工数据\\手机日报上传";
 	private static Log logger = LogFactory.getLog(FtpUtil.class);
 
 	private FtpUtil() {
 	}
 
-	public static void initDefaultFtpClient() throws SocketException, IOException {
+	private static void initDefaultFtpClient() throws SocketException, IOException {
 		ftpClient.connect(DEFAULT_FTP_HOST, DEFAULT_FTP_PORT);// 连接FTP服务器
 		ftpClient.login(DEFAULT_FTP_USER_NAME, DEFAULT_FTP_USER_PWD);// 登陆FTP服务器
 		if (!FTPReply.isPositiveCompletion(ftpClient.getReplyCode())) {
@@ -34,27 +37,79 @@ public class FtpUtil {
 		}
 	}
 	
-	public static void loginOutFtpClient() {
+	private static void loginOutFtpClient() {
 		if (ftpClient.isConnected()) {
 			try {
 				ftpClient.disconnect();
+				logger.info("断开FTP连接");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
 	}
+	
+	/**
+	 * 上传多个本地文件
+	 * @param localFiles
+	 * @return
+	 */
+	public static boolean uploadDefaultFile(List<File> localFiles) {
+		
+		boolean isOk = true;
+		if (localFiles == null || localFiles.size() == 0) {
+			return !isOk;
+		}
+		try {
+			initDefaultFtpClient();
+            ftpClient.setControlEncoding("UTF-8"); // 中文支持
+            ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);
+            ftpClient.enterLocalPassiveMode();
+            //设置远程的上传目录
+            ftpClient.changeWorkingDirectory(DEFAULT_FTP_REMOTE_DIR);
+            //文件流
+            for (File file2 : localFiles) {
+            	FileInputStream inputStream = new FileInputStream(file2);
+                ftpClient.storeFile(file2.getName(), inputStream);
+               
+                inputStream.close();
+                if (!FTPReply.isPositiveCompletion(ftpClient.getReplyCode())) {
+                	logger.info("上传失败："+file2.getName());
+                	isOk =  false;
+                } else {
+                    logger.info("上传成功");
+                }
+			}
+            loginOutFtpClient();
+        } catch (SocketException e) {
+            e.printStackTrace();
+            isOk =  false;
+            logger.info("FTP的IP地址可能错误，请正确配置。");
+        } catch (IOException e) {
+            e.printStackTrace();
+            isOk =  false;
+            logger.info("FTP的端口错误,请正确配置。");
+        }
+		return isOk;
+	}
 
+	/**
+	 * 上传单个文件，不建议使用，请使用uploadDefaultFile(File[] localFiles) 这个方法
+	 * @param file
+	 * @return
+	 */
+	@Deprecated
 	public static boolean uploadDefaultFile(File file) {
 		boolean isOk = false;
 		try {
             ftpClient.setControlEncoding("UTF-8"); // 中文支持
             ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);
             ftpClient.enterLocalPassiveMode();
-            ftpClient.changeWorkingDirectory(DEFAULT_FILE_PATH);
+            //设置远程的上传目录
+            ftpClient.changeWorkingDirectory(DEFAULT_FTP_REMOTE_DIR);
             //文件流
             FileInputStream inputStream = new FileInputStream(file);
             ftpClient.storeFile(file.getName(), inputStream);
-
+           
             inputStream.close();
             if (!FTPReply.isPositiveCompletion(ftpClient.getReplyCode())) {
                 System.out.println("未连接到FTP，用户名或密码错误。");
