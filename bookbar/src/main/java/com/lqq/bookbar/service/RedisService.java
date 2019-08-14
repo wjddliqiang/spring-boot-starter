@@ -14,20 +14,23 @@ public class RedisService {
     private RedisTemplate<String, Object> redisTemplate;
     
     /**
-     * 写入数据
+     * @since 1.0
+     * _写入数据
      * @param key
+     *        _键
      * @param value
+     *        _值
      */
     public void set(String key, Object value) {
         //更改在redis里面查看key编码问题
         //RedisSerializer redisSerializer = new  StringRedisSerializer();
         //redisTemplate.setKeySerializer(redisSerializer);
-        ValueOperations<String, Object> vo =  redisTemplate.opsForValue();
-        vo.set(key, value);
+      ValueOperations<String, Object> vo =  redisTemplate.opsForValue();
+      vo.set(key, value);
     }
     
     /**
-     * 判断redis连接是否OK
+     * _判断redis连接是否OK
      * @return
      */
     public boolean isConnOk() {

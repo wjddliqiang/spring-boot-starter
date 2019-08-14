@@ -1,9 +1,11 @@
 /**
  * 
  */
+
 package com.lqq.bookbar.utils;
 
 /**
+ * @since 1.0
  * 主键生成器，有guid，也有组合主键（guid和时间序列结合的）
  * @author lenovo
  *
@@ -12,7 +14,7 @@ public class PrimaryKeyHelper {
 
 	/**
 	 *  去掉连接符‘-’，并将原始字符转换成大写
-	 * @return String 
+	 * @return String
 	 */
 	public static String getGuidKey() {
 		return java.util.UUID.randomUUID().toString().toUpperCase().replace("-", "");
@@ -25,9 +27,7 @@ public class PrimaryKeyHelper {
 	public static String getCompKey() {
 		return java.util.UUID.randomUUID().toString().toUpperCase().replace("-", "").substring(0, 19)+System.currentTimeMillis();
 	}
-	
-	
-	
+
 	public static void main(String[] args) {
 		System.out.println(getGuidKey());
 		System.out.println(getCompKey());
