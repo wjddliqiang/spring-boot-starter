@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bookbar</name> 
 	<description>bookbar project for Spring Boot</description>
-
+ 
 	<properties>
 		<java.version>1.8</java.version>
 		<!-- 为保证maven能够正常打包，不出现乱码 -->
