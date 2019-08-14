@@ -11,7 +11,7 @@
 	<groupId>com.lqq</groupId>
 	<artifactId>bookbar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bookbar</name>
+	<name>bookbar</name> 
 	<description>bookbar project for Spring Boot</description>
 
 	<properties>
