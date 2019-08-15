@@ -13,6 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bookbar</name> 
 	<description>bookbar project for Spring Boot</description>
+  	<!-- 表示打包时打成war包，需要打成jar包就写jar -->
+  	<packaging>war</packaging>
   
 	<properties>
 		<java.version>1.8</java.version>
@@ -21,6 +23,14 @@
 	</properties>
 
 	<dependencies>
+	
+	    <!-- 配置外部TOMCAT-->
+	    <dependency>
+	    	<groupId>org.springframework.boot</groupId>
+	    	<artifactId>spring-boot-starter-tomcat</artifactId>
+	    	<scope>provided</scope>
+	    </dependency>
+	     
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -173,6 +183,8 @@
 			</plugin>
 		</plugins>
 		<defaultGoal>compile</defaultGoal>
+		<!-- 打包的最终文件名 -->
+		<finalName>bookar</finalName>
 	</build>
 
 </project>
