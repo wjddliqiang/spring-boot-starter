@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
@@ -90,15 +91,25 @@ public class Java8Tester {
 	@Test
 	public void testDateTime() {
 		LocalDate date = LocalDate.now();
-		System.out.println(date);
+		//System.out.println(date);
 		
 		LocalTime time = LocalTime.now();
-		System.out.println(time);
+		//System.out.println(time);
 		
 		LocalDateTime localDateTime = LocalDateTime.now();
 		
 		
 		System.out.println("月："+localDateTime.getMonthValue()+"日："+localDateTime.getDayOfMonth()+"小时："+localDateTime.getHour());
+		
+		//格式化日期
+		DateTimeFormatter ofPattern = DateTimeFormatter.ofPattern("yyyyMMdd");
+		System.out.println("日期格式化前："+date+"   格式化后："+date.format(ofPattern));
+		
+		DateTimeFormatter ofPattern1 = DateTimeFormatter.ofPattern("hhmmss");
+		System.out.println("时间格式化前："+time+"   格式化后："+time.format(ofPattern1));
+		
+		DateTimeFormatter ofPattern2 = DateTimeFormatter.ofPattern("yyyyMMdd hhmmss:SSS");
+		System.out.println("时戳格式化前："+localDateTime+"   格式化后："+localDateTime.format(ofPattern2));
 		
 		// 获取当前时间日期
 		ZonedDateTime date1 = ZonedDateTime.parse("2015-12-03T10:15:30+05:30[Asia/Shanghai]");

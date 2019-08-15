@@ -166,12 +166,13 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<!-- 配置主入口，否则打成jar包后提示找不到主类 -->
 				<configuration>
-					<!--  <mainClass>com.lqq.bookbar.BookbarApplication</mainClass>
-					-->
-					<mainClass>com.lqq.bookbar.utils.HttpClientApp</mainClass>
+					<mainClass>com.lqq.bookbar.BookbarApplication</mainClass>
+					<!--  <mainClass>com.lqq.bookbar.utils.HttpClientApp</mainClass>
+				    -->
 				</configuration>
 			</plugin>
 		</plugins>
+		<defaultGoal>compile</defaultGoal>
 	</build>
 
 </project>

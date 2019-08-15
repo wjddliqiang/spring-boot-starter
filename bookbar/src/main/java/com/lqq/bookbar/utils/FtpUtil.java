@@ -3,13 +3,22 @@ package com.lqq.bookbar.utils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPFile;
 import org.apache.commons.net.ftp.FTPReply;
 
 import ch.qos.logback.classic.Logger;
 
 import java.io.*;
 import java.net.SocketException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
+import java.util.TimeZone;
 
 public class FtpUtil {
 
@@ -25,7 +34,7 @@ public class FtpUtil {
 
 	private FtpUtil() {
 	}
-
+	
 	private static void initDefaultFtpClient() throws SocketException, IOException {
 		ftpClient.connect(DEFAULT_FTP_HOST, DEFAULT_FTP_PORT);// 连接FTP服务器
 		ftpClient.login(DEFAULT_FTP_USER_NAME, DEFAULT_FTP_USER_PWD);// 登陆FTP服务器
@@ -60,7 +69,9 @@ public class FtpUtil {
 			return !isOk;
 		}
 		try {
-			initDefaultFtpClient();
+			if(!ftpClient.isConnected()) {
+				initDefaultFtpClient();
+			}
             ftpClient.setControlEncoding("UTF-8"); // 中文支持
             ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);
             ftpClient.enterLocalPassiveMode();
@@ -262,4 +273,51 @@ public class FtpUtil {
 		return success;
 	}
 
+	public static FTPFile[] listFiles(String path) throws IOException {
+		if(!ftpClient.isConnected()) {
+			initDefaultFtpClient();
+		}
+		return ftpClient.listFiles(path);
+	}
+	
+	public static void main(String[] args) throws IOException {
+		FtpUtil.initDefaultFtpClient();
+		//ftpClient.changeWorkingDirectory("/APP/ftpdata/aeon_bi");
+		String addr_pre = "/APP/ftpdata/aeon_bi/";
+		LocalDate   date1 = LocalDate.of(2019, 5, 1);
+		LocalDate   date2 = LocalDate.of(2019, 5, 31);
+		LocalDate tmp = date1;
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+		while(tmp.compareTo(date2) <= 0) {
+			
+			System.out.println();
+			FTPFile[] fs = ftpClient.listFiles("/APP/ftpdata/aeon_bi/"+tmp.format(formatter)+"/");
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			//ftp服务器上面的时间设置和本地不一样
+			TimeZone gmt8 = TimeZone.getTimeZone("GMT+8");
+			TimeZone gmt = TimeZone.getTimeZone("GMT");
+			//sdf.setTimeZone(gmt16);
+			//TimeZone.setDefault(TimeZone.getTimeZone("GMT+16"));
+			System.out.println(tmp.format(formatter)+" 超时传输的文件：");
+			for (FTPFile ftpFile : fs) {
+				int timeOffset = gmt.getRawOffset() - gmt8.getRawOffset();    
+	            Date d1 = new Date(ftpFile.getTimestamp().getTime().getTime() - timeOffset);    
+				
+				//c.add(Calendar.HOUR, 8);
+				//System.out.println(c.getTimeZone());
+				//c.setd(timeZone);
+				if(d1.getHours()>5 || (d1.getHours()==5 && d1.getMinutes() >= 30)) {
+					System.out.println(ftpFile.getName()+"     "+sdf.format(d1)+" HH:"+d1.getHours()+" mm:"+d1.getMinutes());
+				}
+				
+			}
+			
+			tmp = tmp.plusDays(1);
+		}
+		
+		
+		
+		
+		
+	}
 }

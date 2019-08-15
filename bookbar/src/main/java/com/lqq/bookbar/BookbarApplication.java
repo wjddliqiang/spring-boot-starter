@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import com.lqq.bookbar.controller.Person;
  
@@ -14,6 +15,7 @@ import com.lqq.bookbar.controller.Person;
  *
  */
 @SpringBootApplication
+@EnableScheduling
 @EnableConfigurationProperties({Person.class})
 public class BookbarApplication extends SpringBootServletInitializer{
 	

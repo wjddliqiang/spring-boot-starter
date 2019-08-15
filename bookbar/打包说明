@@ -1,0 +1,6 @@
+项目打包成jar包
+1.选择项目右键 run as -> 4 maven build
+2.在弹出框中的goal输入  clean install -DskipTests 或者clean install -Dmaven.test.skip=true
+  profile 可选输入[dev,test,prod]，不输入按照默认文件打包
+  
+项目打包成war包
