@@ -30,6 +30,6 @@ public class BookbarApplication extends SpringBootServletInitializer{
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
 		return builder.sources(this.getClass());
 	}
-
+    
 
 }
