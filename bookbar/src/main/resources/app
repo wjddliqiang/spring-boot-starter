@@ -46,4 +46,4 @@ spring.devtools.restart.exclude: WEB-INF/**
 
 ##241更改，查看33更新状况
 ##33未自动更新，查看jenkins配置 ok 1
-##241更改1 触发Jenkins自动构建部署
+##241更改2 触发Jenkins自动构建部署
