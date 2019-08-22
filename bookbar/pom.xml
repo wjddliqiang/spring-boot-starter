@@ -14,7 +14,7 @@
 	<name>bookbar</name> 
 	<description>bookbar project for Spring Boot</description>
   	<!-- 表示打包时打成war包，需要打成jar包就写jar -->
-  	<packaging>war</packaging>
+  	<packaging>jar</packaging>
   
 	<properties>
 		<java.version>1.8</java.version>
@@ -184,7 +184,7 @@
 		</plugins>
 		<defaultGoal>compile</defaultGoal>
 		<!-- 打包的最终文件名 -->
-		<finalName>bookar</finalName>
+		<finalName>bookbar</finalName>
 	</build>
 
 </project>

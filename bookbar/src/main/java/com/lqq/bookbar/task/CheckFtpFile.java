@@ -131,6 +131,7 @@ Year:可出现", - * /"四个字符，有效范围为1970-2099年
 	 * @throws IOException 
 	 */
 	@Scheduled(cron = "0 0 09 ? * *")
+	//@Scheduled(fixedRate = 1000*20)
 	public void check55FtpTask() throws IOException {
 		LocalDate localdate = LocalDate.now();
 		localdate = localdate.minusDays(1);
@@ -158,5 +159,7 @@ Year:可出现", - * /"四个字符，有效范围为1970-2099年
 		}else {
 			logger.info("检查FTP文件夹["+dateforcheck+"]正常！");
 		}
+		
+		FtpUtil.loginOutFtpClient();
 	}
 }

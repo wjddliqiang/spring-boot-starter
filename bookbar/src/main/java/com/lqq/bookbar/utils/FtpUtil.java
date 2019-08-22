@@ -46,9 +46,10 @@ public class FtpUtil {
 		}
 	}
 	
-	private static void loginOutFtpClient() {
-		if (ftpClient.isConnected()) {
+	public static void loginOutFtpClient() {
+		if (ftpClient != null) {
 			try {
+				ftpClient.logout();
 				ftpClient.disconnect();
 				logger.info("断开FTP连接");
 			} catch (IOException e) {
