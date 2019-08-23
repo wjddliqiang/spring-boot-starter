@@ -14,7 +14,7 @@
 	<name>bookbar</name> 
 	<description>bookbar project for Spring Boot</description>
   	<!-- 表示打包时打成war包，需要打成jar包就写jar -->
-  	<packaging>jar</packaging>
+  	<packaging>war</packaging>
   
 	<properties>
 		<java.version>1.8</java.version>
