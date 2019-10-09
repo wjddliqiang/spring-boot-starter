@@ -2,6 +2,7 @@ package com.lqq.bookbar.utils;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class tests {
 
@@ -42,7 +43,15 @@ public class tests {
     	System.out.println("用户2与0001门店距离："+Math.round(getDistance(113.329521589854,23.1342418067308,113.329465949709,23.1369858733551)));
     	//计算用户2与8001门店距离
     	System.out.println("用户2与8001门店距离："+Math.round(getDistance(113.329521589854,23.1342418067308,113.350885014231,23.1292031080757)));
-	}
+    	
+    	//计算京东到家token中的time
+    	long s = 1539002297602L;
+    	
+    	LocalDate d = LocalDate.of(1970, 1, 1);
+    	LocalDate d1 = d.plusDays(s/86400000);
+    	System.out.println(d1);
+    
+    }
 
 	
 //	public static void main(String[] args) {
