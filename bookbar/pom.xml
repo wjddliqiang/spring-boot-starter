@@ -74,7 +74,7 @@
 		<dependency>
 		    <groupId>commons-net</groupId>
 		    <artifactId>commons-net</artifactId>
-		    <version>1.4.1</version>
+		    <version>3.9.0</version>
 		</dependency>
 		
 		<!-- 添加阿里巴巴数据库连接池 启动后访问路径/druid，用户名、密码：admin -->
